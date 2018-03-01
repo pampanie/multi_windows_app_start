@@ -1,5 +1,6 @@
 #include "ofMain.h"
 #include "ofApp.h"
+
 #include "ofAppGLFWWindow.h"
 
 //========================================================================
@@ -11,19 +12,31 @@ int main( ){
 	//	// pass in width and height too:
 	//	ofRunApp(new ofApp());
 	
-	//	main window ================
+	
+//	better way to include var from ofapp.h ***********  TDOO
+	int mainW = 800;
+	int mainH = 600;
+	int guiW = 300;
+	int guiH = 300;
+
+	
+	
+	
+	
+	
+	//	main window ===============
 	ofGLFWWindowSettings settings;
 //	main window size
-	settings.width = 600;
-	settings.height = 600;
+	settings.width = mainW;
+	settings.height = mainH;
 //	main window position
-	settings.setPosition(ofVec2f(300,0));
+	settings.setPosition(ofVec2f(guiW,0));
 	//	settings.resizable = true;
 	shared_ptr<ofAppBaseWindow> mainWindow = ofCreateWindow(settings);
 
 //	gui window size
-	settings.width = 300;
-	settings.height = 300;
+	settings.width = guiW;
+	settings.height = guiH;
 //	gui window position
 	settings.setPosition(ofVec2f(0,0));
 	settings.resizable = false;

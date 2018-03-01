@@ -23,6 +23,14 @@ public:
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
 	
+	
+	int mainW = 800;
+	int mainH = 600;
+	int guiW = 300;
+	int guiH = 300;
+	
+	
+	
 	ofParameterGroup parameters;
 	ofParameter<float> radius;
 	ofParameter<ofColor> color;
